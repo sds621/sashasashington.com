@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sashington Family Portal - Sasha Sashington's Network Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SASHINGTON<span class="highlight">NET</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#family">Family</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" id="loginBtn" class="cta-button">Family Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to the <span class="highlight">Sashington Family</span> Portal</h1>
+                <p>Connecting our family through technology</p>
+                <a href="#login" class="cta-button">Access Family Area</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About <span class="highlight">Sasha Sashington</span></h2>
+                <p>Hey there! I'm Sasha, a network engineer and the tech guru of our family. I've created this portal to bring our family closer together and share my passion for technology with all of you.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Family Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Family Reunions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Family Trips</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Recent <span class="highlight">Projects</span></h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Family Tree Digitization</h3>
+                        <p>Created an interactive digital family tree, tracing our roots back five generations.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Secure Family Cloud</h3>
+                        <p>Set up a private cloud server for secure family photo and document sharing.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Family Event Planner</h3>
+                        <p>Developed a custom app to coordinate family gatherings and track RSVPs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="family" class="family">
+            <div class="container">
+                <h2>Family <span class="highlight">Portal</span></h2>
+                <p>Access our private family area to view shared photos, upcoming events, and more. Login required.</p>
+                <a href="#login" class="cta-button">Family Login</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in <span class="highlight">Touch</span></h2>
+                <form id="contactForm">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#family">Family Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2024 Sashington Family Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Family Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" class="cta-button">Login</button>
+            </form>
+            <p>Forgot your login? <a href="#" id="contactAdmin">Contact Admin</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
